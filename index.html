@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div id="alert">
+    
+    </div>
+    
+
+
+    <div class="container">
+        <h1 class="my-5">Book A Hotel Room</h1>
+        <form class="row g-3 needs-validation my-5 mx-5" novalidate>
+
+            <!-- Select your State -->
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="selectState" required>
+                    <option class="text-light bg-dark" selected disabled value="">Choose...</option>
+                    <option id="punjab">Punjab</option>
+                    <option>Sindh</option>
+                    <option>Balochistan</option>
+                    <option>KPK</option>
+                </select>
+                <!-- <div class="invalid-feedback">
+                    Please select a valid state.
+                </div> -->
+            </div>
+
+            <!-- Write Hotel name -->
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Hotel</label>
+                <select class="form-select" id="selectHotel" required>
+                    <option class="text-light bg-dark" selected disabled value="">Choose...</option>
+                    <option id="punjab">5 Star</option>
+                    <option>6 Star</option>
+                    <option>7 Star</option>
+                    <option>10 Star</option>
+                </select>
+                <!-- <div class="invalid-feedback">
+                    Please select a valid state.
+                </div> -->
+            </div>
+
+            <!-- Username -->
+            <!-- <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Your Name</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">@</span> -->
+            <div class="form-group w-50">
+                <label for="formGroupExampleInput">Enter Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+                <label id="invalidName"></label>
+
+            </div>
+
+            <!-- <div class="invalid-feedback">
+                        Please choose a username.
+                    </div> -->
+            <!-- </div>
+            </div> -->
+
+            <!-- Contact Number -->
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contactNumber" placeholder="Your phone number" required>
+                <label id="invalidPhone"></label>
+                <!-- <div class="valid-feedback">
+                    Looks good!
+                </div> -->
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="emailAddress" aria-describedby="emailHelp" required>
+                <label id="invalidEmail"></label>
+            </div>
+
+            <!-- Any Additional Message -->
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a messagae here" id="additionalMessage"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Any Additional Message</label>
+            </div>
+
+
+            <!-- Booking Button -->
+            <div class="col-12">
+                <button class="btn btn-primary" id="submitButton" type="submit">Send Booking Request</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <!-- Bootstrap File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Form Validation JS File -->
+    <script src="script.js"></script>
+</body>
+
